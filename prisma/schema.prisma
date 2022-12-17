@@ -1,0 +1,35 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+    provider = "prisma-client-js"
+}
+
+// datasource db_postgres {
+//     provider = "postgresql"
+//     url      = env("DATABASE_URL")
+// }
+
+datasource db {
+    provider = "sqlite"
+    url = "file:./keyboards.db"
+}
+
+model Product {
+    type   String  @id
+    stores Store[]
+}
+
+model Store {
+    id   String @id @default(uuid())
+    url  String @unique
+    name String
+
+    products Product[]
+
+    region  String
+    shipsTo String
+    status  String
+
+    isManufacturer Boolean
+}
