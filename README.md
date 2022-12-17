@@ -6,7 +6,7 @@ To run locally, make sure [NodeJS](https://nodejs.org/en/) is installed (I highl
 
 Ideally, you load this repository with [Git](https://git-scm.com/), since it is easier to get the code simply by running `git clone https://github.com/Wundero/keebstores`, however downloading as a Zip and extracting it to a folder also works, just know that you cannot contribute if you do so that way.
 
-Once the dependencies are installed, open up a command line terminal in the root folder of the project and run `npm i`. This will install the dependencies of this project. Then, to run, either run `npm run dev` (starts faster but might be more intense on your system since it is actively watching for file changes) or:
+Once the dependencies are installed, open up a command line terminal in the root folder of the project and run the command `npm install`. This will install the dependencies of this project. Then, to run, either run `npm run dev` (starts faster but might be more intense on your system since it is actively watching for file changes) or:
 1. Run `npm run build`, which can take a few minutes
 2. Run `npm run start`, which run the app.
 
